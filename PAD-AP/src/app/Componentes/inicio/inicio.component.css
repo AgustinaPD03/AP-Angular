@@ -1,0 +1,70 @@
+.container {
+    height: 95vh;
+    text-align: center;
+    font-size: 35px;
+    display: flex;
+    flex-direction: column;
+}
+.social-buttons a {
+font-size: 30px;
+color: #000000;
+padding: 10px;
+}
+.Texto-inicio {
+    background-color: var(--Bcolor);
+    padding-inline: 40px;
+    padding-top: 15px;
+}
+i.fa-brands.fa-square-facebook:hover {
+    color: #1877f2;
+    background: var(--Ccolor);
+    border-radius: 50%;
+    padding: 7px;
+}
+i.fa-brands.fa-square-twitter:hover {
+    color: #00acee;
+    background: var(--Ccolor);
+    border-radius: 50%;
+    padding: 7px;
+}
+i.fab.fa-instagram:hover {
+    color: #E1306C;
+    background: var(--Ccolor);
+    border-radius: 50%;
+    padding: 7px;
+}
+i.fab.fa-linkedin:hover {
+    color: #0077B5;
+    background: var(--Ccolor);
+    border-radius: 50%;
+    padding: 7px;
+}
+i.fa-brands.fa-square-github:hover {
+    color: #6f42c1;
+    background: var(--Ccolor);
+    border-radius: 50%;
+    padding: 7px;
+}
+i.fa-solid.fa-envelope:hover {
+    color: #D14836;
+    background: var(--Ccolor);
+    border-radius: 50%;
+    padding: 7px;
+}
+h3#bajo-ani {
+    display: inline-block;
+    overflow: hidden;
+    border-right: .15em solid #332e1d;
+    white-space: nowrap;
+    animation: typing 3.5s infinite alternate steps(30, end) forwards, blinking 1s infinite;
+    max-width:fit-content;
+
+}
+@keyframes typing {
+    from { width: 0; }
+    to { width: 100%; }
+}
+@keyframes blinking {
+    from { border-color: transparent; }
+    to { border-color: var(--Dcolor);}
+}
