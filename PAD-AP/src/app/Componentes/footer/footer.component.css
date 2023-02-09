@@ -1,0 +1,13 @@
+section#About-footer {
+    background-color: var(--Acolor);
+    background-size: cover;
+    padding-inline: 5vh;
+    padding-block: 1vh;
+    bottom: 0;
+    width: 100%;
+    z-index: 10;
+}
+p.footer-text {
+    text-align: center;
+    margin: 2vh;
+}
