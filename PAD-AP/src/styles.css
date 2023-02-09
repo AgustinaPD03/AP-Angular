@@ -1,0 +1,17 @@
+/* You can add global styles to this file, and also import other style files */
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@600&display=swap');
+
+body{
+    background-color: var(--fondo)!important;
+    display: flex;
+    flex-direction: column;
+    font-family: 'Nunito', sans-serif!important;
+}
+:root {
+    --Acolor: #9fd6d2;
+    --Bcolor: #d0ecea;
+    --Ccolor: #fbeec2;
+    --Dcolor: #8b7a5e;
+    --Extcolor: #332e1d;
+    --fondo: #faf6de;
+}
