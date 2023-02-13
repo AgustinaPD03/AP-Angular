@@ -10,6 +10,9 @@ import { HabyExpComponent } from './Componentes/Sobre-Mi/haby-exp/haby-exp.compo
 import { HabComponent } from './Componentes/Sobre-Mi/hab/hab.component';
 import { ProyectosComponent } from './Componentes/proyectos/proyectos.component';
 import { FooterComponent } from './Componentes/footer/footer.component';
+import { LogyRegComponent } from './Componentes/logy-reg/logy-reg.component';
+import { LoginComponent } from './Componentes/logy-reg/login/login.component';
+import { RegistroComponent } from './Componentes/logy-reg/registro/registro.component';
 
 @NgModule({
   declarations: [
@@ -20,7 +23,10 @@ import { FooterComponent } from './Componentes/footer/footer.component';
     HabyExpComponent,
     HabComponent,
     ProyectosComponent,
-    FooterComponent
+    FooterComponent,
+    LogyRegComponent,
+    LoginComponent,
+    RegistroComponent
   ],
   imports: [
     BrowserModule,
