@@ -12,6 +12,10 @@ import { HabyexpComponent } from './Componentes/sobre-mi2/habyexp/habyexp.compon
 import { DesscpComponent } from './Componentes/sobre-mi2/desscp/desscp.component';
 import { HabilidadesComponent } from './Componentes/sobre-mi2/habilidades/habilidades.component';
 import { IndexComponent } from './Componentes/index/index.component';
+import { DashboardComponent } from './Componentes/dashboard/dashboard.component';
+import { EInicioComponent } from './Componentes/dashboard/e-inicio/e-inicio.component';
+import { ESobreMiComponent } from './Componentes/dashboard/e-sobre-mi/e-sobre-mi.component';
+import { EProyectosComponent } from './Componentes/dashboard/e-proyectos/e-proyectos.component';
 
 @NgModule({
   declarations: [
@@ -24,7 +28,11 @@ import { IndexComponent } from './Componentes/index/index.component';
     HabyexpComponent,
     DesscpComponent,
     HabilidadesComponent,
-    IndexComponent
+    IndexComponent,
+    DashboardComponent,
+    EInicioComponent,
+    ESobreMiComponent,
+    EProyectosComponent
   ],
   imports: [
     BrowserModule,

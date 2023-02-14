@@ -1,0 +1,36 @@
+/*Proyectos edit*/
+.Lista-proyectos {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    padding: 0;
+  }
+  .Proyecto-1, .Proyecto-2, .Proyecto-3 {
+    position: relative;
+    border-radius: 10px;
+    overflow: hidden;
+    display: block;
+  }
+  img.img-proy1, img.img-proy2, img.img-proy3 {
+    width: 100%;
+    height: auto;
+  }
+  .text-proy1, .text-proy2, .text-proy3 {
+    position: absolute;
+    padding: .5rem;
+    background-color: var(--Bcolor);
+    z-index: 10;
+    bottom: 0;
+    right: 0;
+    left: 0;
+  }
+  p.desc-proy1, p.desc-proy2, p.desc-proy3 {
+    margin: 0;
+  }
+  .btns-p {
+    padding: .5rem;
+    position: absolute;
+    right: 0;
+    top: 0;
+    display: flex;
+  }
