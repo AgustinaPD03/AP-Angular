@@ -3,21 +3,6 @@
     padding: 5vh;
     text-align: center;
 }
-h2.Linea {
-    position: relative;
-    z-index: 1;
-}
-h2.Linea:before {
-    border-top: 4px solid var(--Acolor);
-    content: "";
-    position: absolute;
-    top: 50%;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    width: 100%;
-    z-index: -1;
-}
 span.Text-R {
         background: var(--Bcolor);
         padding-inline: 20px;

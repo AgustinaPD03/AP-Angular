@@ -15,3 +15,22 @@ body{
     --Extcolor: #332e1d;
     --fondo: #faf6de;
 }
+h2.Linea {
+    position: relative;
+    z-index: 1;
+}
+h2.Linea:before {
+    border-top: 5px solid var(--Acolor);
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    z-index: -1;
+}
+h2, h4 {
+    text-align: center;
+    margin: 20px;
+}

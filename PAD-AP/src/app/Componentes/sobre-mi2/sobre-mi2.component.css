@@ -1,3 +1,5 @@
 .Cosas.sobre.mi {
-    background-color: var(--Acolor);
+    background-color: var(--Bcolor);
+    padding-inline: 5%;
+    padding-block: 2vh;
 }

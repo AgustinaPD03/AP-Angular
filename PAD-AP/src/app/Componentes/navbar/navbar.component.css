@@ -24,7 +24,7 @@ button.btn {
 button.btn:hover {
     background-color: white;
     border-color: white;
-    color: var(--Expcolor);
+    color: var(--Acolor);
 }
 button.btn.btn-primary {
     background-color: var(--Acolor);
@@ -33,6 +33,7 @@ button.btn.btn-primary {
 button.btn.btn-primary:hover {
     background-color: #61a6ab;
     border: 3px solid #61a6ab;
+    color: white;
 }
 .modal-header {
     background-color: var(--Acolor);

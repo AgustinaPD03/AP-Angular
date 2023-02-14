@@ -2,9 +2,9 @@ section#Proyectos {
     padding: 5vh;
     min-height: 350px;
 }
-h2 {
-    text-align: center;
-    margin: 20px;
+span.Text-R2 {
+    background-color: var(--fondo);
+    padding-inline: 20px;
 }
 .cards-p {
     display: grid;
@@ -87,6 +87,7 @@ h3.card-title {
 }
 .Icon1, .Icon2 {
     color: var(--Dcolor);
+    margin-inline: 5px;
 }
 .Icon1:hover, .Icon2:hover {
     color: var(--Extcolor);

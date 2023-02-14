@@ -11,6 +11,7 @@ import { SobreMi2Component } from './Componentes/sobre-mi2/sobre-mi2.component';
 import { HabyexpComponent } from './Componentes/sobre-mi2/habyexp/habyexp.component';
 import { DesscpComponent } from './Componentes/sobre-mi2/desscp/desscp.component';
 import { HabilidadesComponent } from './Componentes/sobre-mi2/habilidades/habilidades.component';
+import { IndexComponent } from './Componentes/index/index.component';
 
 @NgModule({
   declarations: [
@@ -22,7 +23,8 @@ import { HabilidadesComponent } from './Componentes/sobre-mi2/habilidades/habili
     SobreMi2Component,
     HabyexpComponent,
     DesscpComponent,
-    HabilidadesComponent
+    HabilidadesComponent,
+    IndexComponent
   ],
   imports: [
     BrowserModule,
