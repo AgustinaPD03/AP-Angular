@@ -16,6 +16,9 @@ import { DashboardComponent } from './Componentes/dashboard/dashboard.component'
 import { EInicioComponent } from './Componentes/dashboard/e-inicio/e-inicio.component';
 import { ESobreMiComponent } from './Componentes/dashboard/e-sobre-mi/e-sobre-mi.component';
 import { EProyectosComponent } from './Componentes/dashboard/e-proyectos/e-proyectos.component';
+import { LogYRegComponent } from './Componentes/log-yreg/log-yreg.component';
+import { LoginComponent } from './Componentes/log-yreg/login/login.component';
+import { RegistroComponent } from './Componentes/log-yreg/registro/registro.component';
 
 @NgModule({
   declarations: [
@@ -32,7 +35,10 @@ import { EProyectosComponent } from './Componentes/dashboard/e-proyectos/e-proye
     DashboardComponent,
     EInicioComponent,
     ESobreMiComponent,
-    EProyectosComponent
+    EProyectosComponent,
+    LogYRegComponent,
+    LoginComponent,
+    RegistroComponent
   ],
   imports: [
     BrowserModule,
