@@ -19,6 +19,8 @@ import { EProyectosComponent } from './Componentes/dashboard/e-proyectos/e-proye
 import { LogYRegComponent } from './Componentes/log-yreg/log-yreg.component';
 import { LoginComponent } from './Componentes/log-yreg/login/login.component';
 import { RegistroComponent } from './Componentes/log-yreg/registro/registro.component';
+import { EEstudiosComponent } from './Modales/e-estudios/e-estudios.component';
+import { EExperienciasComponent } from './Modales/e-experiencias/e-experiencias.component';
 
 @NgModule({
   declarations: [
@@ -38,7 +40,9 @@ import { RegistroComponent } from './Componentes/log-yreg/registro/registro.comp
     EProyectosComponent,
     LogYRegComponent,
     LoginComponent,
-    RegistroComponent
+    RegistroComponent,
+    EEstudiosComponent,
+    EExperienciasComponent
   ],
   imports: [
     BrowserModule,

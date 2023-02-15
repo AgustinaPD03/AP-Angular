@@ -12,3 +12,11 @@
     float: none;
     }
 }
+section {
+  margin-inline: 5%;
+  margin-block: 1%;
+}
+.col1, .col2 {
+  float: left;
+  width: 50%;
+}

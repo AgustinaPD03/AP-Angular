@@ -28,27 +28,6 @@ ul.lista-estudios, ul.lista-experiencia {
     margin-top: 30px;
     list-style: none;
 }
-button.btn-edit, button.btn-del, button.btn-add{
-    border-radius: 50%;
-    border: var(--Ccolor);
-    color: var(--Extcolor);
-    background: var(--Ccolor);
-    padding: 10px;
-    align-items: flex-end;
-    text-align: center;
-}
-
-.extra-btn {
-    text-align: center;
-    padding-block: 15px;
-}
-.Edit-btns {
-    margin-top: 30px;
-    display: flex;
-    flex-wrap: nowrap;
-    justify-content: end;
-    margin-right: 5vh;
-}
 .cards-p{
     display: grid;
     grid-template-columns: repeat(auto-fit, max(300px, 1fr));
@@ -85,4 +64,37 @@ h2 {
   border-radius: 10px;
   text-decoration: none;
   overflow: hidden;
+}
+h1 {
+    text-align: center;
+}
+h5 {
+    text-align: center;
+    padding-block: 10px;
+}
+button.btn-edit, button.btn-del, button.btn-add{
+    border-radius: 10px;
+    border: var(--Ccolor);
+    color: var(--Extcolor);
+    background: var(--Ccolor);
+    padding: 10px;
+    align-items: flex-end;
+    text-align: center;
+    margin: 1px;
+  }
+  
+  .extra-btn {
+    text-align: center;
+    padding-block: 15px;
+  }
+  .Edit-btns {
+    margin-top: 30px;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: end;
+    margin-right: 5vh;
+  }
+  span.Text-R {
+    background: var(--fondo);
+    padding-inline: 20px;
 }
