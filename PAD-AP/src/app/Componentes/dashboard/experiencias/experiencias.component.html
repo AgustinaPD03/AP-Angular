@@ -1,0 +1,29 @@
+<div class="Experiencias">
+  <h3>Tus experiencias laborales</h3>
+  <ul class="lista-experiencias">
+    <!--Inicio de experiencia-->
+    <li *ngFor="let experiencia of experienciaList" class="experiencia">
+      <div class="logo-lista">
+        <img [src]="experiencia.imagen" [alt]="experiencia.alt" id="Logo-inst">
+      </div>
+      <div class="informacion-exp">
+        <h5><strong>{{experiencia.lugar}}</strong></h5>
+        <p>{{experiencia.descripcion2}}</p>
+        <p>{{experiencia.inicio2}}</p>
+      </div>
+      <div class="Edit-btns">
+        <div class="btn-edit">
+          <button class="btn-edit" data-bs-toggle="modal" data-bs-target="#eExperiencia"><i class="fas fa-pen"></i></button>
+        </div>
+        <div class="btn-deleteexp1">
+          <button class="btn-del"><i class="fa-solid fa-trash"></i></button>
+        </div>
+      </div>
+    </li>
+    <!--Final de experiencia-->
+  </ul>
+  <div class="extra-btn">
+    <button class="btn-add" data-bs-toggle="modal" data-bs-target="#eExperiencia">Agregar elemento</button>
+  </div>
+</div>
+<app-e-experiencias></app-e-experiencias>

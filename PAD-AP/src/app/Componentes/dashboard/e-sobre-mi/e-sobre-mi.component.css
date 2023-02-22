@@ -1,69 +1,6 @@
-/*Edición estudios y experiencias*/
-.cards{
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 25px;
-}
-.card{
-    height: auto;
-    border-radius: 8px;
-    background: none;
-    border: none;
-}
-li.estudio, li.exp {
-    display: flex;
-    flex: 1 1 auto;
-}
-.logo-lista {
-    box-sizing: border-box;
-}
-img#Logo-inst {
-    width: 50px;
-    height: 50px;
-    margin: 10px;
-}
-ul.lista-estudios, ul.lista-experiencia {
-    margin-left: -5%!important;
-    margin-right: -5%;
-    margin-top: 30px;
-    list-style: none;
-}
-.cards-p{
-    display: grid;
-    grid-template-columns: repeat(auto-fit, max(300px, 1fr));
-    gap: 20px;
-}
-.card-p{
-    height: auto;
-    border-radius: 8px;
-    background: none;
-    border: none;
-}
-
-/*Habilidades edit*/
-input {
-    border: 1px solid #ced4da;
-    border-radius: .375rem;
-    transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
-}
 h2 {
   text-align: center;
   margin: 20px;
-}
-.cards-p {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  gap: 2rem;
-  padding: 0;
-  list-style-type: none;
-}
-.Card-p {
-  position: relative;
-  display: block;
-  height: 100%;
-  border-radius: 10px;
-  text-decoration: none;
-  overflow: hidden;
 }
 h1 {
     text-align: center;
@@ -72,21 +9,6 @@ h5 {
     text-align: center;
     padding-block: 10px;
 }
-button.btn-edit, button.btn-del, button.btn-add{
-    border-radius: 10px;
-    border: var(--Ccolor);
-    color: var(--Extcolor);
-    background: var(--Ccolor);
-    padding: 10px;
-    align-items: flex-end;
-    text-align: center;
-    margin: 1px;
-  }
-  
-  .extra-btn {
-    text-align: center;
-    padding-block: 15px;
-  }
   .Edit-btns {
     margin-top: 30px;
     display: flex;

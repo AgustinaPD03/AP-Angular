@@ -15,12 +15,19 @@ import { IndexComponent } from './Componentes/index/index.component';
 import { DashboardComponent } from './Componentes/dashboard/dashboard.component';
 import { EInicioComponent } from './Componentes/dashboard/e-inicio/e-inicio.component';
 import { ESobreMiComponent } from './Componentes/dashboard/e-sobre-mi/e-sobre-mi.component';
-import { EProyectosComponent } from './Componentes/dashboard/e-proyectos/e-proyectos.component';
 import { LogYRegComponent } from './Componentes/log-yreg/log-yreg.component';
 import { LoginComponent } from './Componentes/log-yreg/login/login.component';
 import { RegistroComponent } from './Componentes/log-yreg/registro/registro.component';
-import { EEstudiosComponent } from './Modales/e-estudios/e-estudios.component';
-import { EExperienciasComponent } from './Modales/e-experiencias/e-experiencias.component';
+import { EstudiosComponent } from './Componentes/dashboard/estudios/estudios.component';
+import { EEstudiosComponent } from './Componentes/dashboard/estudios/e-estudios/e-estudios.component';
+import { DescripcionComponent } from './Componentes/dashboard/descripcion/descripcion.component';
+import { HttpClientModule } from '@angular/common/http';
+import { ExperienciasComponent } from './Componentes/dashboard/experiencias/experiencias.component';
+import { EExperienciasComponent } from './Componentes/dashboard/experiencias/e-experiencias/e-experiencias.component';
+import { Habilidades2Component } from './Componentes/dashboard/habilidades2/habilidades2.component';
+import { ProyectodComponent } from './Componentes/dashboard/proyectod/proyectod.component';
+import { EProyectoComponent } from './Componentes/dashboard/proyectod/e-proyecto/e-proyecto.component';
+import { ModalGuardadoComponent } from './Componentes/navbar/modal-guardado/modal-guardado.component'
 
 @NgModule({
   declarations: [
@@ -37,16 +44,23 @@ import { EExperienciasComponent } from './Modales/e-experiencias/e-experiencias.
     DashboardComponent,
     EInicioComponent,
     ESobreMiComponent,
-    EProyectosComponent,
     LogYRegComponent,
     LoginComponent,
     RegistroComponent,
     EEstudiosComponent,
-    EExperienciasComponent
+    EstudiosComponent,
+    DescripcionComponent,
+    ExperienciasComponent,
+    EExperienciasComponent,
+    Habilidades2Component,
+    ProyectodComponent,
+    EProyectoComponent,
+    ModalGuardadoComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
