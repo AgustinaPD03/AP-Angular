@@ -1,0 +1,26 @@
+<div class="Proyectos">
+    <h2 class="Linea"><span class="Text-R">Tus Proyectos</span></h2>
+    <ul class="Lista-proyectos">
+      <!--Inicio de Proyecto-->
+      <li *ngFor="let proyecto of proyectoList" class="Proyecto">
+        <img class="img-proy" [src]="proyecto.imagen" alt="port-proy">
+        <div class="text-proy">
+          <h6>{{proyecto.nombre}}</h6>
+          <p class="desc-proy">{{proyecto.tipo}}</p>
+        </div>
+        <div class="btns-p">
+          <div class="btn-edit">
+            <button class="btn-edit" data-bs-toggle="modal" data-bs-target="#EProyecto"><i class="fas fa-pen"></i></button>
+          </div>
+          <div class="btn-deleteproy">
+            <button class="btn-del"><i class="fa-solid fa-trash"></i></button>
+          </div>
+        </div>
+      </li>
+      <!--Final de Proyecto-->
+    </ul>
+    <div class="extra-btn">
+      <button class="btn-add" data-bs-toggle="modal" data-bs-target="#EProyecto">Agregar elemento</button>
+    </div>
+</div>
+<app-e-proyecto></app-e-proyecto>

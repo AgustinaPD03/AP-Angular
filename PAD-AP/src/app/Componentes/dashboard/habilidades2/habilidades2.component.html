@@ -1,0 +1,31 @@
+<div class="Tus-habilidades">
+  <h3>Tus habilidades</h3>
+  <div class="HS-edi">
+    <h5>Hard Skills</h5>
+    <div class="list-Hard-Skills">
+      <ul class="HardsSkills">
+        <li *ngFor="let Hhabilidad of habilidadesHList">
+          <h6>{{Hhabilidad.nombre}} {{Hhabilidad.id}}</h6>
+          <input type="text" class="name-shab1">
+          <input type="number" min="0" max="100" class="porc-hab1">
+        </li>
+      </ul>
+    </div>
+    <div class="extra-btn">
+      <button class="btn-add">Agregar elemento</button>
+    </div>
+  </div>
+  <div class="SS-edi">
+    <h5>Soft Skills</h5>
+    <ul class="HardsSkills">
+      <li *ngFor="let Shabilidad of habilidadesSList">
+        <h6>{{Shabilidad.nombre}} {{Shabilidad.id}}</h6>
+        <input type="text" class="name-shab1">
+        <input type="number" min="0" max="100" class="porc-hab1">
+      </li>
+    </ul>
+    <div class="extra-btn">
+      <button class="btn-add">Agregar elemento</button>
+    </div>
+  </div>
+</div>

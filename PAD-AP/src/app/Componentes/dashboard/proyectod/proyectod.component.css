@@ -1,21 +1,21 @@
 /*Proyectos edit*/
-.Lista-proyectos {
+ul.Lista-proyectos {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 2rem;
     padding: 0;
   }
-  .Proyecto-1, .Proyecto-2, .Proyecto-3 {
+  li.Proyecto {
     position: relative;
     border-radius: 10px;
     overflow: hidden;
     display: block;
   }
-  img.img-proy1, img.img-proy2, img.img-proy3 {
+  img.img-proy {
     width: 100%;
     height: auto;
   }
-  .text-proy1, .text-proy2, .text-proy3 {
+  .text-proy {
     position: absolute;
     padding: .5rem;
     background-color: var(--Bcolor);
@@ -24,7 +24,7 @@
     right: 0;
     left: 0;
   }
-  p.desc-proy1, p.desc-proy2, p.desc-proy3 {
+  p.desc-proy {
     margin: 0;
   }
   .btns-p {

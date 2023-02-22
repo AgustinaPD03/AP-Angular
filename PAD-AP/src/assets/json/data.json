@@ -1,0 +1,237 @@
+{
+    "estudios":
+    [
+        {
+            "id":1,
+            "institucion": "IPEM n° 8. Manuel Reyes Reyna",
+            "descripcion": "Estudios secundarios, con orientación a las Ciencias Sociales",
+            "inicio": "2016/2021",
+            "imagen": "./../../../../assets/Escudo_de_la_Provincia_de_Córdoba.svg.png",
+            "alt": "Escudo de la Provincia de Córdoba"
+        },
+        {
+            "id":2,
+            "institucion": "Escuela de Tecnología Médica - UNC",
+            "descripcion": "Licenciatura en Producción de Bioimágenes",
+            "inicio": "2022/actualidad",
+            "imagen": "./../../../../assets/ETM-UNC.jpg",
+            "alt": "Logo Escuela de Tecnologia Medica"
+        },
+        {
+            "id":3,
+            "institucion": "Digitalizate",
+            "descripcion": "Certificación en Marketing Digital y comercio electronico",
+            "inicio": "2022",
+            "imagen": "./../../../../assets/Digitalizate.jpg",
+            "alt": "Logo Digitalizate"
+        },
+        {
+            "id":4,
+            "institucion": "Argentina Programa",
+            "descripcion": "#SeProgramar y #YoProgramo",
+            "inicio": "2022/actualidad",
+            "imagen": "./../../../../assets/arg-programa.png",
+            "alt": "Logo Argentina Programa"
+        },
+        {
+            "id":5,
+            "institucion": "Argentina Programa",
+            "descripcion": "#SeProgramar y #YoProgramo",
+            "inicio": "2022/actualidad",
+            "imagen": "./../../../../assets/arg-programa.png",
+            "alt": "Logo Argentina Programa"
+        },
+        {
+            "id":6,
+            "institucion": "Argentina Programa",
+            "descripcion": "#SeProgramar y #YoProgramo",
+            "inicio": "2022/actualidad",
+            "imagen": "./../../../../assets/arg-programa.png",
+            "alt": "Logo Argentina Programa"
+        },
+        {
+            "id":7,
+            "institucion": "Argentina Programa",
+            "descripcion": "#SeProgramar y #YoProgramo",
+            "inicio": "2022/actualidad",
+            "imagen": "./../../../../assets/arg-programa.png",
+            "alt": "Logo Argentina Programa"
+        }
+    ],
+    "experiencias":[
+        {
+            "id":1,
+            "lugar":"Lugar de trabajo",
+            "descripcion2":"Descripción o puesto",
+            "inicio2":"Tiempo en ese trabajo",
+            "imagen":"./../../../../assets/imagen-relleno.jpg",
+            "alt":""
+        },
+        {
+            "id":2,
+            "lugar":"Lugar de trabajo",
+            "descripcion2":"Descripción o puesto",
+            "inicio2":"Tiempo en ese trabajo",
+            "imagen":"./../../../../assets/imagen-relleno.jpg",
+            "alt":""
+        },
+        {
+            "id":3,
+            "lugar":"Lugar de trabajo",
+            "descripcion2":"Descripción o puesto",
+            "inicio2":"Tiempo en ese trabajo",
+            "imagen":"./../../../../assets/imagen-relleno.jpg",
+            "alt":""
+        },
+        {
+            "id":4,
+            "lugar":"Lugar de trabajo",
+            "descripcion2":"Descripción o puesto",
+            "inicio2":"Tiempo en ese trabajo",
+            "imagen":"./../../../../assets/imagen-relleno.jpg",
+            "alt":""
+        },
+        {
+            "id":5,
+            "lugar":"Lugar de trabajo",
+            "descripcion2":"Descripción o puesto",
+            "inicio2":"Tiempo en ese trabajo",
+            "imagen":"./../../../../assets/imagen-relleno.jpg",
+            "alt":""
+        },
+        {
+            "id":6,
+            "lugar":"Lugar de trabajo",
+            "descripcion2":"Descripción o puesto",
+            "inicio2":"Tiempo en ese trabajo",
+            "imagen":"./../../../../assets/imagen-relleno.jpg",
+            "alt":""
+        },
+        {
+            "id":7,
+            "lugar":"Lugar de trabajo",
+            "descripcion2":"Descripción o puesto",
+            "inicio2":"Tiempo en ese trabajo",
+            "imagen":"./../../../../assets/imagen-relleno.jpg",
+            "alt":""
+        }
+    ],
+    "habilidadesH": [
+        {
+            "id":1,
+            "nombre":"Habilidad",
+            "porcentaje": 10
+        },
+        {
+            "id":2,
+            "nombre":"Habilidad",
+            "porcentaje": 10
+        },
+        {
+            "id":3,
+            "nombre":"Habilidad",
+            "porcentaje": 10
+        },
+        {
+            "id":4,
+            "nombre":"Habilidad",
+            "porcentaje": 10
+        },
+        {
+            "id":5,
+            "nombre":"Habilidad",
+            "porcentaje": 10
+        },
+        {
+            "id":6,
+            "nombre":"Habilidad",
+            "porcentaje": 10
+        }
+    ],
+    "habilidadesS": [
+        {
+            "id":1,
+            "nombre":"Habilidad",
+            "porcentaje": 10
+        },
+        {
+            "id":2,
+            "nombre":"Habilidad",
+            "porcentaje": 10
+        },
+        {
+            "id":3,
+            "nombre":"Habilidad",
+            "porcentaje": 10
+        },
+        {
+            "id":4,
+            "nombre":"Habilidad",
+            "porcentaje": 10
+        },
+        {
+            "id":5,
+            "nombre":"Habilidad",
+            "porcentaje": 10
+        },
+        {
+            "id":6,
+            "nombre":"Habilidad",
+            "porcentaje": 10
+        }
+    ],
+    "proyectos": [
+        {
+            "id":1,
+            "nombre":"Nombre del proyecto",
+            "tipo": "Tipo del Proyecto",
+            "descripcion": "Descripción del proyecto",
+            "imagen":"./../../../../assets/Proy-port.jpg"
+        },
+        {
+            "id":2,
+            "nombre":"Nombre del proyecto",
+            "tipo": "Tipo del Proyecto",
+            "descripcion": "Descripción del proyecto",
+            "imagen":"./../../../../assets/Proy-port.jpg"
+        },
+        {
+            "id":3,
+            "nombre":"Nombre del proyecto",
+            "tipo": "Tipo del Proyecto",
+            "descripcion": "Descripción del proyecto",
+            "imagen":"./../../../../assets/Proy-port.jpg"
+        },
+        {
+            "id":4,
+            "nombre":"Nombre del proyecto",
+            "tipo": "Tipo del Proyecto",
+            "descripcion": "Descripción del proyecto",
+            "imagen":"./../../../../assets/Proy-port.jpg"
+        },
+        {
+            "id":5,
+            "nombre":"Nombre del proyecto",
+            "tipo": "Tipo del Proyecto",
+            "descripcion": "Descripción del proyecto",
+            "imagen":"./../../../../assets/Proy-port.jpg"
+        }
+    ],
+    "inicio": [
+        {
+            "nombre":"Pamela Delgado",
+            "profesion": "Programadora Full Stack"
+        }
+    ],
+    "redes": [
+        {
+            "red": "",
+            "link": ""
+        }
+    ],
+    "colores": [
+        {
+            "codigo": ""
+        }
+    ]
+}

@@ -1,0 +1,31 @@
+<div class="Estudios">
+    <h3>Tus estudios</h3>
+    <div id="estudios-1">
+          <ul class="lista-estudios">
+            <!--Inicio de estudio-->
+            <li *ngFor="let estudio of estudioList" class="estudio">
+              <div class="logo-lista">
+                <img [src]="estudio.imagen" [alt]="estudio.alt" id="Logo-inst">
+              </div>
+              <div class="informacion-estudio">
+                <h5><strong>{{estudio.institucion}}</strong></h5>
+                <p>{{estudio.descripcion}}</p>
+                <p>{{estudio.inicio}}</p>
+              </div>
+              <div class="Edit-btns">
+                <div class="btn-edit">
+                  <button class="btn-edit" data-bs-toggle="modal" data-bs-target="#eEstudios"><i class="fas fa-pen"></i></button>
+                </div>
+                <div class="btn-deleteEst2">
+                  <button class="btn-del"><i class="fa-solid fa-trash"></i></button>
+                </div>
+              </div>
+            </li>
+            <!--Final de estudio-->
+          </ul>
+    </div>
+    <div class="extra-btn">
+      <button class="btn-add" data-bs-toggle="modal" data-bs-target="#eEstudios">Agregar elemento</button>
+    </div>
+</div>
+<app-e-estudios></app-e-estudios>

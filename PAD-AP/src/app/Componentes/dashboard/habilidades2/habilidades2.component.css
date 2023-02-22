@@ -1,0 +1,30 @@
+button.btn-del, button.btn-add{
+  border-radius: 10px;
+  border: var(--Ccolor);
+  color: var(--Extcolor);
+  background: var(--Ccolor);
+  padding: 10px;
+  align-items: flex-end;
+  text-align: center;
+  margin: 1px;
+}
+.extra-btn {
+  text-align: center;
+  padding-block: 15px;
+}
+/*Habilidades edit*/
+input {
+border: 1px solid #ced4da;
+border-radius: .375rem;
+transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+}
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  display: inline-table;
+  margin: 10px;
+}
