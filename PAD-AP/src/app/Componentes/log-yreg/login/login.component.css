@@ -1,12 +1,21 @@
-button.btn-f.btn-secondary {
+button#btn-f\.btn-secondary {
     background-color: var(--Acolor)!important;
     border-color: var(--Acolor);
     border-radius: 3rem;
     padding: 0.5rem 2rem;
     border-width: 3px;
-    align-self: flex-end;
 }
-section {
+section.login {
     margin-block: 9.2rem;
     margin-inline: 5%;
+  }
+  .botondelmal {
+    text-align: end;
+  }
+  .error{
+    color:red
+  }
+  
+  .border-danger{
+    border-color: red;
   }
