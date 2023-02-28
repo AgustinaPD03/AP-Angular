@@ -217,21 +217,6 @@
             "imagen":"./../../../../assets/Proy-port.jpg"
         }
     ],
-    "inicio": [
-        {
-            "nombre":"Pamela Delgado",
-            "profesion": "Programadora Full Stack"
-        }
-    ],
-    "redes": [
-        {
-            "red": "",
-            "link": ""
-        }
-    ],
-    "colores": [
-        {
-            "codigo": ""
-        }
-    ]
+        "nombre":"Pamela Delgado",
+        "profesion": "Programadora Full Stack"
 }

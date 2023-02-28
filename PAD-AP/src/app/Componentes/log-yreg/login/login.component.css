@@ -12,10 +12,3 @@ section.login {
   .botondelmal {
     text-align: end;
   }
-  .error{
-    color:red
-  }
-  
-  .border-danger{
-    border-color: red;
-  }

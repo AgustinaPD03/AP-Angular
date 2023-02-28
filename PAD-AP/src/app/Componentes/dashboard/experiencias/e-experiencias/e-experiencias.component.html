@@ -5,38 +5,60 @@
         <h1 class="modal-title fs-5" id="eExperiencia">Panel de edición - Experiencia laboral</h1>
         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
       </div>
-      <div class="modal-body">
-        <div class="mb-3">
-          <label for="formFileSm" class="form-label">Selecciona el icono de la empresa</label>
-          <input class="form-control form-control-sm" id="formFileSm" type="file">
-        </div>
-        <div class="mb-3">
-          <label for="exampleInputNbIns" class="form-label">Nombre de la empresa</label>
-          <input type="email" class="form-control" id="exampleInputNbIns">
-        </div>
-        <div class="mb-3">
-          <label for="exampleInputQeIns" class="form-label">Tipo de empresa</label>
-          <input type="email" class="form-control" id="exampleInputQeIns">
-        </div>
-        <div class="mb-3">
-          <label for="exampleInputdsIns" class="form-label">¿Qué puesto cumplias y qué hacias?</label>
-          <input type="email" class="form-control" id="exampleInputdsIns">
-        </div>
-        <div class="row g-4">
-          <div class="col">
-            <label for="fecha">Desde...</label>
-            <input type="month" name="fecha" id="fecha" class="form-control" value="2019-08">
+      <form [formGroup]="form" (ngSubmit)="onEnviar($event)">
+        <div class="modal-body">
+          <div class="input-img">
+            <div class="mb-3">
+              <label for="formFileSm" class="form-label">Selecciona el icono de la empresa</label>
+              <input class="form-control form-control-sm" id="formFileSm" type="file">
+            </div>
           </div>
-          <div class="col">
-            <label for="fecha">Hasta...</label>
-            <input type="month" name="fecha" id="fecha" class="form-control" value="2019-08">
+          <div class="input-name">
+            <div class="mb-3">
+              <label for="exampleInputNbIns" class="form-label">Nombre de la empresa</label>
+              <input type="email" class="form-control" id="exampleInputNbIns" formControlName="name">
+            </div>
+            <div *ngIf="Name?.errors && Name?.touched">
+              <p *ngIf="Name?.hasError('required')" class="error">
+                Nombre requerido
+              </p>
+            </div>
           </div>
+          <div class="input-tipo">
+            <div class="mb-3">
+              <label for="exampleInputQeIns" class="form-label">Tipo de empresa</label>
+              <input type="email" class="form-control" id="exampleInputQeIns">
+            </div>
+          </div>
+          <div class="input-puesto">
+            <div class="mb-3">
+              <label for="exampleInputdsIns" class="form-label">¿Qué puesto cumplias y qué hacias?</label>
+              <input type="email" class="form-control" id="exampleInputdsIns" formControlName="puesto">
+            </div>
+            <div *ngIf="Puesto?.errors && Puesto?.touched">
+              <p *ngIf="Puesto?.hasError('required')" class="error">
+                Puesto requerido
+              </p>
+            </div>
+          </div>
+          <div class="inputs-fechas">
+            <div class="row g-4">
+              <div class="col">
+                <label for="fecha">Desde...</label>
+                <input type="month" name="fecha" id="fecha" class="form-control" value="2019-08">
+              </div>
+              <div class="col">
+                <label for="fecha">Hasta...</label>
+                <input type="month" name="fecha" id="fecha" class="form-control" value="2019-08">
+              </div>
+            </div>
+          </div>
+      </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
+          <button type="submit" class="btn btn-primary">Aceptar</button>
         </div>
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
-        <button type="button" class="btn btn-primary">Aceptar</button>
-      </div>
+      </form>
     </div>
   </div>
 </div>

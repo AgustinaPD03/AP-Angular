@@ -1,12 +1,20 @@
-<p>e-inicio works!</p>
+<br><br>
 <section>
   <div class="row g-3">
     <h2 class="Linea"><span class="Text-R">Edición de la sección inicial</span></h2>
     <div class="col1">
-      <form>
+      <form [formGroup]="form" (ngSubmit)="onEnviar($event)">
         <div class="mb-3">
           <label for="exampleInputName" class="form-label">Tu nombre</label>
-          <input type="Name" class="form-control form-control-sm" id="exampleInputName" aria-describedby="NameHelp">
+          <input type="Name" class="form-control form-control-sm" formControlName="name">
+        </div>
+        <div *ngIf="Name?.errors && Name?.touched">
+          <p *ngIf="Name?.hasError('required')" class="error">
+            Nombre requerido
+          </p>
+          <p *ngIf="Name?.hasError('pattern')" class="error">
+            Nombre invalido
+          </p>
         </div>
         <div class="mb-3">
           <label for="exampleInputProf" class="form-label">Tu profesión</label>
@@ -18,18 +26,27 @@
         </div>
       </form>
       <h4>Redes</h4>
-      <label for="inputRed" class="form-label">Facebook</label>
-        <input type="url" id="inputRed" class="form-control form-control-sm" aria-describedby="RedHelpBlock">
+      <form [formGroup]="form" (ngSubmit)="onEnviar($event)">
+        <div>
+        <label for="inputRed" class="form-label">Facebook</label>
+        <input type="url" class="form-control form-control-sm" formControlName="red" aria-describedby="RedHelpBlock">
         <label for="inputRed" class="form-label">Twitter</label>
-        <input type="url" id="inputRed" class="form-control form-control-sm" aria-describedby="RedHelpBlock">
+        <input type="url" class="form-control form-control-sm" formControlName="red" aria-describedby="RedHelpBlock">
         <label for="inputRed" class="form-label">Instragram</label>
-        <input type="url" id="inputRed" class="form-control form-control-sm" aria-describedby="RedHelpBlock">
+        <input type="url" class="form-control form-control-sm" formControlName="red" aria-describedby="RedHelpBlock">
         <label for="inputRed" class="form-label">Linkedin</label>
-        <input type="url" id="inputRed" class="form-control form-control-sm" aria-describedby="RedHelpBlock">
+        <input type="url" class="form-control form-control-sm" formControlName="red" aria-describedby="RedHelpBlock">
         <label for="inputRed" class="form-label">Github</label>
-        <input type="url" id="inputRed" class="form-control form-control-sm" aria-describedby="RedHelpBlock">
+        <input type="url" class="form-control form-control-sm" formControlName="red" aria-describedby="RedHelpBlock">
         <label for="inputRed" class="form-label">Mail</label>
-        <input type="email" id="inputRed" class="form-control form-control-sm" aria-describedby="RedHelpBlock">
+        <input type="email" class="form-control form-control-sm" formControlName="red" aria-describedby="RedHelpBlock">
+      </div>
+      <div *ngIf="Red?.errors">
+        <p *ngIf="Red?.hasError('pattern')" class="error">
+          Ingrese un link valido
+        </p>
+      </div>
+    </form>
     </div>
     <div class="col2">
       <div class="seccion-colores">
