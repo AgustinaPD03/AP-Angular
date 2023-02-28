@@ -5,33 +5,74 @@
         <h1 class="modal-title fs-5" id="EProyecto">Panel de edición - Proyecto</h1>
         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
       </div>
-      <div class="modal-body">
-        <label for="formFileSm" class="form-label">Coloca una imagen del proyecto</label>
-        <div class="input-group input-group-sm mb-3">
-          <input type="file" class="form-control" id="inputGroupFile04" aria-describedby="inputGroupFileAddon04" aria-label="Upload">
+      <form [formGroup]="form" (ngSubmit)="onEnviar($event)">
+        <div class="modal-body">
+          <div class="Input-img">
+          <label for="formFileSm" class="form-label">Coloca una imagen del proyecto</label>
+          <div class="input-group input-group-sm mb-3">
+            <input type="file" class="form-control" id="inputGroupFile04" aria-label="Upload">
+          </div>
+          </div>
+          <div class="input-nombre">
+            <label for="formFileSm" class="form-label">Nombre del proyecto</label>
+            <div class="input-group input-group-sm mb-3">
+              <input type="text" class="form-control" formControlName="name">
+            </div>
+            <div *ngIf="Name?.errors && Name?.touched">
+              <p *ngIf="Name?.hasError('required')" class="error">
+                Nombre requerido
+              </p>
+              <p *ngIf="Name?.hasError('maxLength')" class="error">
+                Los caracteres maximos son 20
+              </p>
+            </div>
+          </div>
+          <div class="input-desc">
+            <label for="formFileSm" class="form-label">Describe el proyecto</label>
+            <div class="input-group input-group-sm mb-3">
+              <input type="text" class="form-control" formControlName="desc">
+            </div>
+            <div *ngIf="Desc?.errors && Desc?.touched">
+              <p *ngIf="Desc?.hasError('required')" class="error">
+                Descripción necesaria
+              </p>
+              <p *ngIf="Desc?.hasError('maxLength')" class="error">
+                Limite de caracteres alcanzado (200)
+              </p>
+            </div>
+          </div>
+          <div class="input-linkp">
+            <label for="formFileSm" class="form-label">Coloca el link del proyecto</label>
+            <div class="input-group input-group-sm mb-3">
+              <input type="url" class="form-control" formControlName="linkp">
+            </div>
+            <div *ngIf="Linkp?.errors && Linkp?.touched">
+              <p *ngIf="Linkp?.hasError('required')" class="error">
+                Link del proyecto necesario
+              </p>
+              <p *ngIf="Linkp?.hasError('pattern')">
+                Link invalido
+              </p>
+            </div>
+          </div>
+          <div class="input-linkg">
+            <input type="checkbox" class="form-check-input" id="exampleCheck1">
+            <label class="form-check-label" for="exampleCheck1">¿Quieres poner el link de GitHub? Colocalo</label>
+            <div class="input-group input-group-sm mb-3">
+              <input type="url" class="form-control" formControlName="linkg">
+            </div>
+            <div *ngIf="Linkg?.errors">
+              <p *ngIf="Linkg?.hasError('pattern')" class="error">
+                Link invalido
+              </p>
+            </div>
+          </div>
         </div>
-        <label for="formFileSm" class="form-label">Nombra el proyecto</label>
-        <div class="input-group input-group-sm mb-3">
-          <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm">
-        </div>
-        <label for="formFileSm" class="form-label">Describe el proyecto el proyecto</label>
-        <div class="input-group input-group-sm mb-3">
-          <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm">
-        </div>
-        <label for="formFileSm" class="form-label">Coloca el link del proyecto</label>
-        <div class="input-group input-group-sm mb-3">
-          <input type="url" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm">
-        </div>
-        <input type="checkbox" class="form-check-input" id="exampleCheck1">
-        <label class="form-check-label" for="exampleCheck1">¿Quieres poner el link de GitHub? Colocalo</label>
-        <div class="input-group input-group-sm mb-3">
-          <input type="url" class="form-control"  aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm" disabled>
-        </div>
-      </div>
       <div class="modal-footer">
         <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
-        <button type="button" class="btn btn-primary">Aceptar</button>
+        <button type="submit" class="btn btn-primary">Aceptar</button>
       </div>
+      </form>
     </div>
   </div>
 </div>

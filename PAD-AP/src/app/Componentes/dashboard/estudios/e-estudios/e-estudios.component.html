@@ -6,36 +6,59 @@
           <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
         </div>
         <div class="modal-body">
-          <div class="mb-3">
-            <label for="formFileSm" class="form-label">Selecciona el icono de tu Institución</label>
-            <input class="form-control form-control-sm" id="formFileSm" type="file">
-          </div>
-          <div class="mb-3">
-            <label for="exampleInputNbIns" class="form-label">Nombre de la Institución</label>
-            <input type="email" class="form-control" id="exampleInputNbIns">
-          </div>
-          <div class="mb-3">
-            <label for="exampleInputQeIns" class="form-label">¿De qué es la Institución?</label>
-            <input type="email" class="form-control" id="exampleInputQeIns">
-          </div>
-          <div class="mb-3">
-            <label for="exampleInputdsIns" class="form-label">¿Qué aprendiste ahí?</label>
-            <input type="email" class="form-control" id="exampleInputdsIns">
-          </div>
-          <div class="row g-2">
-            <div class="col">
-              <label for="fecha">Desde...</label>
-              <input type="month" name="fecha" id="fecha" class="form-control" value="2019-08">
+          <form [formGroup]="form" (ngSubmit)="onEnviar($event)">
+            <div class="input-img">
+              <div class="mb-3" id="input-img">
+                <label for="formFileSm" class="form-label">Selecciona el icono de tu Institución</label>
+                <input class="form-control form-control-sm" id="formFileSm" type="file">
+              </div>
             </div>
-            <div class="col">
-              <label for="fecha">Hasta...</label>
-              <input type="month" name="fecha" id="fecha" class="form-control" value="2019-08">
+            <div class="input-name">
+              <div class="mb-3" id="input-nombre">
+                <label for="exampleInputNbIns" class="form-label">Nombre de la Institución</label>
+                <input type="email" class="form-control" id="exampleInputNbIns" formControlName="name">
+              </div>
+              <div *ngIf="Name?.errors && Name?.touched">
+                <p *ngIf="Name?.hasError('required')" class="error">
+                  Nombre necesario
+                </p>
+              </div>
             </div>
-          </div>
-        <div class="modal-footer">
-          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
-          <button type="submit" class="btn btn-primary" value="submit">Guardar cambios</button>
-        </div>
+            <div class="input-tipo">
+              <div class="mb-3" id="input-tipo">
+                <label for="exampleInputQeIns" class="form-label">¿De qué es la Institución?</label>
+                <input type="email" class="form-control" id="exampleInputQeIns">
+              </div>
+            </div>
+            <div class="input-que">
+              <div class="mb-3" id="input-que">
+                <label for="exampleInputdsIns" class="form-label">¿Qué aprendiste ahí?</label>
+                <input type="email" class="form-control" id="exampleInputdsIns" formControlName="que">
+              </div>
+              <div *ngIf="Que?.errors && Que?.touched">
+                <p *ngIf="Que?.hasError('required')" class="error">
+                  Que aprendiste necesario.
+                </p>
+              </div>
+            </div>
+            <div class="input-fecha">
+              <div class="row g-2" id="input-fecha">
+                <div class="col">
+                  <label for="fecha">Desde...</label>
+                  <input type="month" name="fecha" id="fecha" class="form-control" value="2019-08">
+                </div>
+                <div class="col">
+                  <label for="fecha">Hasta...</label>
+                  <input type="month" name="fecha" id="fecha" class="form-control" value="2019-08">
+                </div>
+              </div>
+            </div>
+            <div class="input"></div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
+              <button type="submit" class="btn btn-primary" value="submit">Guardar cambios</button>
+            </div>
+          </form>
       </div>
     </div>
   </div>

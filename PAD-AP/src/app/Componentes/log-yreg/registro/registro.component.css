@@ -9,10 +9,3 @@ section {
     margin-block: 9.2rem;
     margin-inline: 5%;
   }
-  .error{
-    color:red
-  }
-  
-  .border-danger{
-    border-color: red;
-  }
